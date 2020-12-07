@@ -10,8 +10,8 @@ plugin = IEPlugin("GPU", "/opt/intel/openvino/deployment_tools/inference_engine/
 # plugin = IEPlugin("CPU", "/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64")
 # plugin.add_cpu_extension("/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so")
 
-model_xml = '/home/intel/Desktop/intel-object-detection-final/models/openvino/frozen_inference_graph.xml'
-model_bin = '/home/intel/Desktop/intel-object-detection-final/models/openvino/frozen_inference_graph.bin'
+model_xml = '/home/intel/intel-object-detection/models/openvino/frozen_inference_graph.xml'
+model_bin = '/home/intel/intel-object-detection/models/openvino/frozen_inference_graph.bin'
 
 print('Loading network files:\n\t{}\n\t{}'.format(model_xml, model_bin))
 
@@ -105,7 +105,7 @@ while True:
 			continue 
 
 
-		if confidence > 0.9:
+		if confidence > 0.8:
 			print("detect: {}, {}".format(labels[label_index-1], confidence)) 
 			green = (0, 255, 0)  #BGR
 			x_min = int(width*detect[3])
