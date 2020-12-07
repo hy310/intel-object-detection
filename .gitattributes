@@ -2,3 +2,4 @@
 /home/intel/intel-object-detection/etc filter=lfs diff=lfs merge=lfs -text
 /home/intel/intel-object-detection/models filter=lfs diff=lfs merge=lfs -text
 /home/intel/intel-object-detection/pretrained_model/ filter=lfs diff=lfs merge=lfs -text
+object_detection/test_ckpt/ssd_inception_v2.pb filter=lfs diff=lfs merge=lfs -text
