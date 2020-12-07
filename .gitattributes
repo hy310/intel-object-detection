@@ -1,0 +1,4 @@
+/home/intel/intel-object-detection/data filter=lfs diff=lfs merge=lfs -text
+/home/intel/intel-object-detection/etc filter=lfs diff=lfs merge=lfs -text
+/home/intel/intel-object-detection/models filter=lfs diff=lfs merge=lfs -text
+/home/intel/intel-object-detection/pretrained_model/ filter=lfs diff=lfs merge=lfs -text
